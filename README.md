@@ -1,8 +1,11 @@
 # my-key-remappings
-Describes the keyboard remappings that I use for productivity (on both X and TTY).
+Describes the keyboard remappings that I use for productivity (for both X and TTY).
+
 
 
 ## For applications under X window system
+
+### Included files:
 
 `us.nick`
 - Modified version of `/usr/share/X11/xkb/symbols/us`.
@@ -26,6 +29,8 @@ Describes the keyboard remappings that I use for productivity (on both X and TTY
 
 
 ## For the virtual console / TTY
+
+### Included files:
 
 `defkeymap.kmap`
 - Output of `dumpkeys` before any changes.
