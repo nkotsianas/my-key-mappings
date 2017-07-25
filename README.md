@@ -4,32 +4,6 @@ Describes the keyboard remappings that I use for productivity (for both X and TT
 OS is Ubuntu 16.04 LTS.
 
 
-
-## For applications under X window system
-
-### Included files:
-
-`us.nick`
-- Modified version of `/usr/share/X11/xkb/symbols/us`.
-- Defines the keymaps for the United States keyboard layout.
-- Here we can make the switches for the number row and semi-/colon (same as for the TTYs).
-
-`pc.nick`
-- Modified version of `/usr/share/X11/xkb/symbols/pc`.
-- Handles a lot of modifier keys.
-- Here we can make capslock map to escape instead.
-
-### Usage:
-- Pretty self explanatory, just swap the order of the columns on the keys you want.
-- **Backup** your `/usr/share/X11/xkb/symbols/xx` file, then replace it with the new one.
-- (Don't forget to do this **atomically!**)
-
-### Note:
-- There appear to be many (complicated) `xkb` solutions, but it took me a while to find this simple one.
-- For more info, see: https://wiki.archlinux.org/index.php/X_KeyBoard_extension
-- `Xmodmap` is no longer the recommended way to modify keys on X, use `xkb` as here.
-
-
 ## For the virtual console / TTY
 
 ### Included files:
@@ -99,5 +73,29 @@ Steps to create custom keymap:
     | exit 0                                     |
     +--------------------------------------------+
 ```
+
+## For applications under X window system
+
+### Included files:
+
+`us.nick`
+- Modified version of `/usr/share/X11/xkb/symbols/us`.
+- Defines the keymaps for the United States keyboard layout.
+- Here we can make the switches for the number row and semi-/colon (same as for the TTYs).
+
+`pc.nick`
+- Modified version of `/usr/share/X11/xkb/symbols/pc`.
+- Handles a lot of modifier keys.
+- Here we can make capslock map to escape instead.
+
+### Usage:
+- Pretty self explanatory, just swap the order of the columns on the keys you want.
+- **Backup** your `/usr/share/X11/xkb/symbols/xx` file, then replace it with the new one.
+- (Don't forget to do this **atomically!**)
+
+### Note:
+- There appear to be many (complicated) `xkb` solutions, but it took me a while to find this simple one.
+- For more info, see: https://wiki.archlinux.org/index.php/X_KeyBoard_extension
+- `Xmodmap` is no longer the recommended way to modify keys on X, use `xkb` as here.
 
 
