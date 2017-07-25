@@ -61,8 +61,9 @@ Steps to create custom keymap:
     - To revert, see (1).
 
 6. To have this load on every boot:
-    - Add the following line to `/etc/rc.local` just before `exit 0`.
-    - For safety, you may want to wrap the instruction in `if [ -f /etc/remap-capslock.kmap ]; then ... fi`
+    - Add the following line to `/etc/rc.local` (just before `exit 0`).
+    - For safety, you may want to wrap the instruction in an `if` check:
+    - `if [ -f /etc/remap-capslock.kmap ]; then ... fi`
 ```
     +--------------------------------------------+
     | /etc/rc.local                              |
