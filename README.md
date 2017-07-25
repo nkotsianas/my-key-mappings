@@ -61,9 +61,8 @@ Steps to create custom keymap:
     - To revert, see (1).
 
 6. To have this load on every boot:
-    - Add the following line just before `exit 0`.
-    - For safety, you may want to wrap the instruction in:
-    - `if [ -f /etc/remap-capslock.kmap ]; then ... fi`
+    - Add the following line to `/etc/rc.local` just before `exit 0`.
+    - For safety, you may want to wrap the instruction in `if [ -f /etc/remap-capslock.kmap ]; then ... fi`
 ```
     +--------------------------------------------+
     | /etc/rc.local                              |
@@ -94,7 +93,7 @@ Steps to create custom keymap:
 - (Don't forget to do this **atomically!**)
 
 ### Note:
-- There appear to be many `xkb` remapping solutions (just google it), but it took me a while to find this simple one.
+- There appear to be *many* `xkb` remapping solutions (just google it), but it took me a while to find this simple one.
 - For more info, see: https://wiki.archlinux.org/index.php/X_KeyBoard_extension
 - `Xmodmap` is no longer the recommended way to modify keys on X, use `xkb` as here.
 
