@@ -94,7 +94,7 @@ Steps to create custom keymap:
 - (Don't forget to do this **atomically!**)
 
 ### Note:
-- There appear to be many (complicated) `xkb` solutions, but it took me a while to find this simple one.
+- There appear to be many `xkb` remapping solutions (just google it), but it took me a while to find this simple one.
 - For more info, see: https://wiki.archlinux.org/index.php/X_KeyBoard_extension
 - `Xmodmap` is no longer the recommended way to modify keys on X, use `xkb` as here.
 
