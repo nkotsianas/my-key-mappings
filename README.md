@@ -45,6 +45,7 @@ Describes the keyboard remappings that I use for productivity (for both X and TT
 
 `nickkeymap.kmap`
 - Output of `dumpkeys` after the changes.
+- (Not really needed, but just for reference.)
 
 
 ### Usage:
