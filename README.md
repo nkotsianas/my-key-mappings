@@ -1,4 +1,4 @@
-# my-key-remappings
+# my-key-mappings
 Describes the keyboard remappings that I use for productivity (for both X and TTY).
 
 OS is Ubuntu 16.04 LTS.
